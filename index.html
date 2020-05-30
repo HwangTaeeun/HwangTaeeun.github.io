@@ -4,12 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>HWANG'S PORTPOLIO</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
     <style>
-        body{
-            background-color:#336699;
-        }
         .navbar {
             padding-top: 15px;
             padding-bottom: 15px;
@@ -29,7 +27,22 @@
             padding-top: 70px;
             padding-bottom: 70px;
         }
+        .bg-1{
+            background-color:#336699;
+        }
+        
+        .glyphicon{
+            width: 32px;
+            height: 32px;
+        }
+        
+        .link-icon{
+            color: white;
+        }
 
+        .bg-3{
+            background-color:#339966;
+        }
 
     </style>
 </head>
@@ -55,15 +68,44 @@
         </div>
     </nav>
 
-   <!-- 첫번째 컨테이너 -->
+   <!-- 소개 -->
    <div class="container-fluid bg-1 text-center">
        <img src="images/profile.jpg" class=" img-responsive img-circle margin" style="display: inline" alt="profileImg" width="250" height="250">
        <h2>황태항</h2>
        <h5>DEVELOPER</h5>
-       <a href="tel:01030388518"><span class="glyphicon glyphicon-envelope"></span></a>
+       <a href="mailto:dosoj0419@naver.com" class="link-icon"><span class="glyphicon glyphicon-envelope"></span></a>
+       <a href="tel:01030388518" class="link-icon"><span class="glyphicon glyphicon-earphone"></span></a>
+   </div>
+   
+   <!-- 포트폴리오 -->
+   <div class="container-fluid bg-2 text-center">
+       <h3>프로젝트</h3>
+       <div class="row">
+           <div class="col-sm-4">
+               <p>팀프로젝트</p>
+               <img src="images/profile.jpg" class="img-responsive margin" style="widht: 100%" alt="test">
+           </div>
+           <div class="col-sm-4">
+               <p>게시판</p>
+               <img src="images/profile.jpg" class="img-responsive margin" style="widht: 100%" alt="test">
+           </div>
+           <div class="col-sm-4">
+               <p>JAVA</p>
+               <img src="images/profile.jpg" class="img-responsive margin" style="widht: 100%" alt="test">
+           </div>
+           <div class="col-sm-4">
+               <p>html + css</p>
+               <img src="images/profile.jpg" class="img-responsive margin" style="widht: 100%" alt="test">
+           </div>
+       </div>
+   </div>
+   
+   <!-- 진행중 -->
+   <div class="container-fluid bg-3 text-center">
+       <h3>진행중 일들</h3>
    </div>
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
