@@ -16,8 +16,16 @@
             font-style: normal;
         }
 
+        @font-face {
+            font-family: 'S-CoreDream-3Light';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+
         body {
-            font-family: 'Recipekorea', sans-serif;
+            font-family: 'S-CoreDream-3Light', sans-serif;
         }
 
         .navbar {
@@ -68,7 +76,9 @@
 
         }
 
-        .img-fluid {}
+        .umargin{
+            padding: 10px;
+        }
 
     </style>
 </head>
@@ -104,30 +114,34 @@
     </div>
 
     <!-- 포트폴리오 -->
-    <div class="container-fluid bg-2 text-center">
+    <div class="container container-fluid bg-2 text-center">
         <h3>프로젝트</h3>
         <hr>
         <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-2">
+            <div class="col-lg-4"></div>
+            <a href="https://www.naver.com">
+               <div class="col-lg-2 umargin">
                 <p>팀프로젝트</p>
                 <img src="images/profile.jpg" class="img-responsive margin img-fluid" style="widht: 100%" alt="test">
-            </div>
-            <div class="col-sm-2">
+                </div>
+            </a>
+            <div class="col-lg-2 umargin">
                 <p>게시판</p>
                 <img src="images/profile.jpg" class="img-responsive margin img-fluid" style="widht: 100%" alt="test">
             </div>
-            <div class="col-sm-4"></div>
-            
-            <div class="col-sm-2">
+            <div class="col-lg-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-2 umargin">
                 <p>JAVA</p>
                 <img src="images/profile.jpg" class="img-responsive margin img-fluid" style="widht: 100%" alt="test">
             </div>
-            <div class="col-sm-2">
+            <div class="col-lg-2 umargin">
                 <p>html + css</p>
                 <img src="images/profile.jpg" class="img-responsive margin img-fluid" style="widht: 100%" alt="test">
             </div>
-            <div class="col-sm-4"></div>
+            <div class="col-lg-4"></div>
         </div>
     </div>
 
