@@ -7,48 +7,73 @@
     <title>HWANG'S PORTPOLIO</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-social.css">
+
     <style>
+        @font-face {
+            font-family: 'yg-jalnan';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{
+            font-family: 'yg-jalnan' , sans-serif;
+        }
+
         .navbar {
+
             padding-top: 15px;
             padding-bottom: 15px;
             margin-bottom: 0px;
             border-radius: 0;
-            background-color : white;
+            background-color: white;
             letter-spacing: 5px;
         }
 
         .navbar a {
             color: #336699;
         }
-        .icon-bar{
+
+        .icon-bar {
             background-color: #336699;
         }
-        .container-fluid{
+
+        .container-fluid {
             padding-top: 70px;
             padding-bottom: 70px;
         }
-        .bg-1{
-            background-color:#336699;
-        }
-        
-        .glyphicon{
-            width: 32px;
-            height: 32px;
-        }
-        
-        .link-icon{
+
+        .bg-1 {
+            background-color: #336699;
             color: white;
         }
 
-        .bg-3{
-            background-color:#339966;
+
+        .glyphicon {
+            width: 32px;
+            height: 32px;
         }
 
+        .link-icon {
+            color: white;
+        }
+
+        .bg-2 {
+            color: #336699;
+        }
+
+        .bg-3 {
+            background-color: #339966;
+            color: white;
+
+        }
+        .img-fluid{
+           
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar" style="font-weight: bold;">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -68,44 +93,44 @@
         </div>
     </nav>
 
-   <!-- 소개 -->
-   <div class="container-fluid bg-1 text-center">
-       <img src="images/profile.jpg" class=" img-responsive img-circle margin" style="display: inline" alt="profileImg" width="250" height="250">
-       <h2>황태항</h2>
-       <h5>DEVELOPER</h5>
-       <a href="mailto:dosoj0419@naver.com" class="link-icon"><span class="glyphicon glyphicon-envelope"></span></a>
-       <a href="tel:01030388518" class="link-icon"><span class="glyphicon glyphicon-earphone"></span></a>
-   </div>
-   
-   <!-- 포트폴리오 -->
-   <div class="container-fluid bg-2 text-center">
-       <h3>프로젝트</h3>
-       <div class="row">
-           <div class="col-sm-4">
-               <p>팀프로젝트</p>
-               <img src="images/profile.jpg" class="img-responsive margin" style="widht: 100%" alt="test">
-           </div>
-           <div class="col-sm-4">
-               <p>게시판</p>
-               <img src="images/profile.jpg" class="img-responsive margin" style="widht: 100%" alt="test">
-           </div>
-           <div class="col-sm-4">
-               <p>JAVA</p>
-               <img src="images/profile.jpg" class="img-responsive margin" style="widht: 100%" alt="test">
-           </div>
-           <div class="col-sm-4">
-               <p>html + css</p>
-               <img src="images/profile.jpg" class="img-responsive margin" style="widht: 100%" alt="test">
-           </div>
-       </div>
-   </div>
-   
-   <!-- 진행중 -->
-   <div class="container-fluid bg-3 text-center">
-       <h3>진행중 일들</h3>
-   </div>
+    <!-- 소개 -->
+    <div class="container-fluid bg-1 text-center">
+        <img src="images/profile.jpg" class=" img-responsive img-circle margin" style="display: inline" alt="profileImg" width="250" height="250">
+        <h2>황태항</h2>
+        <h5>DEVELOPER</h5>
+        <a href="mailto:dosoj0419@naver.com" class="link-icon"><span class="glyphicon glyphicon-envelope"></span></a>
+        <a href="tel:01030388518" class="link-icon"><span class="glyphicon glyphicon-earphone"></span></a>
+    </div>
+
+    <!-- 포트폴리오 -->
+    <div class="container-fluid bg-2 text-center">
+        <h3>프로젝트</h3>
+        <hr>
+        <div class="row">
+            <div class="col-sm-4">
+                <p>팀프로젝트</p>
+                <img src="images/profile.jpg" class="img-responsive margin img-fluid" style="widht: 100%" alt="test">
+            </div>
+            <div class="col-sm-4">
+                <p>게시판</p>
+                <img src="images/profile.jpg" class="img-responsive margin img-fluid" style="widht: 100%" alt="test">
+            </div>
+            <div class="col-sm-4">
+                <p>JAVA</p>
+                <img src="images/profile.jpg" class="img-responsive margin img-fluid" style="widht: 100%" alt="test">
+            </div>
+            <div class="col-sm-4">
+                <p>html + css</p>
+                <img src="images/profile.jpg" class="img-responsive margin img-fluid" style="widht: 100%" alt="test">
+            </div>
+        </div>
+    </div>
+
+    <!-- 진행중 -->
+    <div class="container-fluid bg-3 text-center">
+        <h3>진행중 일들</h3>
+        <hr>
+    </div>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-</body>
-
-</html>
+</body></html>
