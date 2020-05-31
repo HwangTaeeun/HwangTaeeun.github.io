@@ -25,7 +25,9 @@
 
 
         body {
+            padding-top: 70px;
             font-family: 'S-CoreDream-3Light', sans-serif;
+            
         }
 
         .navbar {
@@ -79,12 +81,16 @@
         .umargin{
             padding: 10px;
         }
+        .proImg{
+            width: 400px;
+            height: 250px;
+        }
 
     </style>
 </head>
 
 <body>
-    <nav class="navbar" style="font-weight: bold;">
+    <nav class="navbar navbar-fixed-top" style="font-weight: bold;">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -106,7 +112,7 @@
 
     <!-- 소개 -->
     <div class="container-fluid bg-1 text-center">
-        <img src="images/upImoge.jpg" class=" img-responsive margin" style="display: inline" alt="profileImg" width="70">
+        <img src="images/upImoge.jpg" class="img-responsive margin" style="display: inline" alt="profileImg" width="70">
         <h2>황태은</h2>
         <h5>DEVELOPER</h5>
         <a href="mailto:dosoj0419@naver.com" class="link-icon"><span class="glyphicon glyphicon-envelope"></span></a>
@@ -118,33 +124,26 @@
         <h3>프로젝트</h3>
         <hr>
         <div class="row">
-            <div class="col-lg-4"></div>
-            <a href="https://www.naver.com">
-               <div class="col-lg-2 umargin">
+            <a href="#">
+                <div class="col-md-4 umargin">
                 <p>팀프로젝트</p>
-                <img src="images/profile.jpg" class="img-responsive margin img-fluid" style="widht: 100%" alt="test">
+                <img src="images/project_01.png" class="img-responsive proImg center-block"   alt="test">
                 </div>
             </a>
-            <div class="col-lg-2 umargin">
-                <p>게시판</p>
-                <img src="images/profile.jpg" class="img-responsive margin img-fluid" style="widht: 100%" alt="test">
+            <a href="https://www.naver.com">
+               <div class="col-md-4 umargin">
+                <p>개인프로젝트</p>
+                <img src="images/project_01.png" class="img-responsive proImg center-block"   alt="test">
+                </div>
+            </a>
+            <a href="#">
+            <div class="col-md-4 umargin">
+                <p>토이프로젝트 - 게시판</p>
+                <img src="images/project_01.png" class="img-responsive proImg center-block"  alt="test">
             </div>
-            <div class="col-lg-4"></div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4"></div>
-            <div class="col-lg-2 umargin">
-                <p>JAVA</p>
-                <img src="images/profile.jpg" class="img-responsive margin img-fluid" style="widht: 100%" alt="test">
-            </div>
-            <div class="col-lg-2 umargin">
-                <p>html + css</p>
-                <img src="images/profile.jpg" class="img-responsive margin img-fluid" style="widht: 100%" alt="test">
-            </div>
-            <div class="col-lg-4"></div>
+            </a>
         </div>
     </div>
-
     <!-- 진행중 -->
     <div class="container-fluid bg-3 text-center">
         <h3>진행중 일들</h3>
