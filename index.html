@@ -27,7 +27,7 @@
         body {
             padding-top: 70px;
             font-family: 'S-CoreDream-3Light', sans-serif;
-            
+
         }
 
         .navbar {
@@ -78,10 +78,16 @@
 
         }
 
-        .umargin{
+        .bg-4 {
+            background-color: coral;
+            color: white;
+        }
+
+        .umargin {
             padding: 10px;
         }
-        .proImg{
+
+        .proImg {
             width: 400px;
             height: 250px;
         }
@@ -102,9 +108,14 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">보유기술</a></li>
-                    <li><a href="#">프로젝트</a></li>
-                    <li><a href="#">진행중</a></li>
+                    <li><a href="#portpolioId">프로젝트</a></li>
+                    <li><a href="#ingId">진행중</a></li>
+                    <li><a href="#skillId">스킬</a></li>
+                    <!--
+                    <a href="#"><li data-target="#portPolioId">프로젝트</li></a>
+                    <a href="#"><li data-target="#skill">스킬</li></a>
+                    <a href="#"><li data-target="aboutMe">합니다.</li></a>
+                    -->
                 </ul>
             </div>
         </div>
@@ -120,37 +131,51 @@
     </div>
 
     <!-- 포트폴리오 -->
-    <div class="container container-fluid bg-2 text-center">
+    <div class="container container-fluid bg-2 text-center" id="portpolioId">
         <h3>프로젝트</h3>
         <hr>
         <div class="row">
-            <a href="#">
-                <div class="col-md-4 umargin">
+
+            <div class="col-md-4 umargin">
                 <p>팀프로젝트</p>
-                <img src="images/project_01.png" class="img-responsive proImg center-block"   alt="test">
-                </div>
-            </a>
-            <a href="https://www.naver.com">
-               <div class="col-md-4 umargin">
+                <img src="images/project_01.png" class="img-responsive proImg center-block" alt="test">
+            </div>
+            <div class="col-md-4 umargin">
                 <p>개인프로젝트</p>
-                <img src="images/project_01.png" class="img-responsive proImg center-block"   alt="test">
-                </div>
-            </a>
-            <a href="#">
+                <img src="images/project_01.png" class="img-responsive proImg center-block" alt="test">
+            </div>
             <div class="col-md-4 umargin">
                 <p>토이프로젝트 - 게시판</p>
-                <img src="images/project_01.png" class="img-responsive proImg center-block"  alt="test">
+                <img src="images/project_01.png" class="img-responsive proImg center-block" alt="test">
             </div>
-            </a>
         </div>
     </div>
+
     <!-- 진행중 -->
-    <div class="container-fluid bg-3 text-center">
+    <div class="container-fluid bg-3 text-center" id="ingId">
         <h3>진행중 일들</h3>
+        <hr>
+    </div>
+
+    <!-- 스킬 -->
+    <div class="container-fluid bg-4 text-center" id="skillId">
+        <h3>스킬</h3>
         <hr>
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var $root = $('html, body');
+            $('.navbar-right li a').click(function() {
+                var scrollPosition = $($(this).attr("href")).offset().top;
+                $root.animate({
+                    scrollTop: scrollPosition
+                }, 500);
+            });
+        });
+
+    </script>
 </body>
 
 </html>
