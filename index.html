@@ -52,6 +52,12 @@
             padding-top: 70px;
             padding-bottom: 70px;
         }
+        
+        .container-footer{
+            padding-top:15px;
+            padding-bottom:15px;
+            margin-top: 100px;
+        }
 
         .bg-1 {
             background-color: #336699;
@@ -75,7 +81,12 @@
         .bg-3 {
             background-color: #339966;
             color: white;
+            border-radius: 25px;
 
+        }
+        .bg-4 {
+            background-color: darkslategray;
+            color: white;
         }
 
         .umargin {
@@ -112,8 +123,18 @@
             text-decoration: none;
         }
 
+        .table {
+            border-bottom: 0px !important;
+        }
 
+        .table th,
+        .table td {
+            border: 1px !important;
+        }
 
+        .fixed-table-container {
+            border: 0px !important;
+        }
     </style>
 </head>
 
@@ -177,11 +198,12 @@
         <h3 class="text-center">스킬</h3>
         <hr>
         <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <table class="table myTable" border="0">
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
+
+                <table class="table">
                     <tr>
-                        <td width="50%">
+                        <td width="25%">
                             Languages
                         </td>
                         <td>
@@ -221,10 +243,14 @@
                         </td>
                     </tr>
                 </table>
+
             </div>
         </div>
 
     </div>
+    <footer class="container-footer bg-4 text-center">
+        <h3>Thank You.</h3>
+    </footer>
     <div class="topBtn">
         <a href="#">
             <span>T O P</span>
@@ -260,8 +286,5 @@
                 slideScroll(0);
             });
         });
-
     </script>
-</body>
-
-</html>
+</body></html>
