@@ -44,6 +44,7 @@
             color: #336699;
         }
 
+
         .icon-bar {
             background-color: #336699;
         }
@@ -88,6 +89,13 @@
         .bg-4 {
             background-color: darkslategray;
             color: white;
+        }
+
+        .bg-5 {
+            margin-top: 50px;
+            background-color: darkorange;
+            color: white;
+            border-radius: 25px;
         }
 
         .umargin {
@@ -136,6 +144,7 @@
         .fixed-table-container {
             border: 0px !important;
         }
+
     </style>
 </head>
 
@@ -154,7 +163,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#portpolioId">프로젝트</a></li>
                     <li><a href="#skillId">스킬</a></li>
-                    <li><a href="#introduceId">소개</a></li>
+                    <li><a href="introduce.html">소개</a></li>
                     <!--
                     <a href="#"><li data-target="#portPolioId">프로젝트</li></a>
                     <a href="#"><li data-target="#skill">스킬</li></a>
@@ -167,11 +176,11 @@
 
     <!-- 소개 -->
     <div class="container-fluid bg-1 text-center">
-      <img src="images/upImoge.jpg" class="img-responsive margin" style="display: inline" alt="profileImg" width="100px;">
-            <h2>황태은</h2>
-            <h5>DEVELOPER</h5>
-            <a href="mailto:dosoj0419@naver.com" class="link-icon"><span class="glyphicon glyphicon-envelope"></span></a>
-            <a href="tel:01030388518" class="link-icon"><span class="glyphicon glyphicon-earphone"></span></a>
+        <img src="images/upImoge.jpg" class="img-responsive margin" style="display: inline" alt="profileImg" width="100px;">
+        <h2>황태은</h2>
+        <h5>DEVELOPER</h5>
+        <a href="mailto:dosoj0419@naver.com" class="link-icon"><span class="glyphicon glyphicon-envelope"></span></a>
+        <a href="tel:01030388518" class="link-icon"><span class="glyphicon glyphicon-earphone"></span></a>
     </div>
 
     <!-- 포트폴리오 -->
@@ -179,22 +188,24 @@
         <h3>프로젝트</h3>
         <hr>
         <div class="row">
-
+            <div class="col-md-4"></div>
             <div class="col-md-4 umargin">
-                <p>팀프로젝트</p>
+                <p>웹-프로젝트</p>
                 <a href="project/teamProject.pdf"><img src="images/project_01.png" class="img-responsive proImg center-block" alt="test"></a>
             </div>
-            <div class="col-md-4 umargin">
+            <!--<div class="col-md-4 umargin">
                 <p>개인프로젝트</p>
                 <img src="images/project_01.png" class="img-responsive proImg center-block" alt="test">
             </div>
             <div class="col-md-4 umargin">
                 <p>토이프로젝트 - 게시판</p>
                 <img src="images/project_01.png" class="img-responsive proImg center-block" alt="test">
-            </div>
+            </div>-->
+            <div class="col-md-4"></div>
         </div>
     </div>
 
+    <!-- 스킬 -->
     <div class="container bg-3" id="skillId">
         <h3 class="text-center">스킬</h3>
         <hr>
@@ -249,8 +260,40 @@
         </div>
 
     </div>
+
+    <!--도서,강좌-->
+    <div class="container bg-5">
+        <h3 class="text-center">
+            도서 및 강의
+        </h3>
+        <hr>
+        <div class="mt-5">
+            <h3>Do it!자바 프로그래밍 입문(100/100)</h3>
+            <div class="progress mt-5">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h3>Do it!자바스크립트 + 제이쿼리 입문(100/100)</h3>
+            <div class="progress mt-5">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h3>유튜브 생활코딩 자바 입문수업(100/100)</h3>
+            <div class="progress mt-5">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h3>유튜브 홍팍 자바 프로그래밍 입문(100/100)</h3>
+            <div class="progress mt-5">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h3>Do it!반응형 웹 만들기(25/100)</h3>
+            <div class="progress mt-5">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+
+
     <footer class="container-footer bg-4 text-center">
-        <h3>Thank You.</h3>
+        <h3>감사합니다.</h3>
     </footer>
     <div class="topBtn">
         <a href="#">
@@ -286,6 +329,13 @@
             $('.topBtn').click(function() {
                 slideScroll(0);
             });
+
+
+
+
         });
+
     </script>
-</body></html>
+</body>
+
+</html>

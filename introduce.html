@@ -6,7 +6,6 @@
     <title>HWANG'S PORTPOLIO</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-social.css">
-
     <style>
         @font-face {
             font-family: 'Recipekorea';
@@ -22,6 +21,12 @@
             font-style: normal;
         }
 
+        @import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+        .nanummyeongjo * {
+            font-family: 'Nanum Myeongjo', serif;
+        }
+
 
         body {
             padding-top: 70px;
@@ -30,7 +35,6 @@
         }
 
         .navbar {
-
             padding-top: 15px;
             padding-bottom: 15px;
             margin-bottom: 0px;
@@ -43,18 +47,14 @@
             color: #336699;
         }
 
-        .icon-bar {
-            background-color: #336699;
-        }
-
         .container-fluid {
             padding-top: 70px;
             padding-bottom: 70px;
         }
-        
-        .container-footer{
-            padding-top:15px;
-            padding-bottom:15px;
+
+        .container-footer {
+            padding-top: 15px;
+            padding-bottom: 15px;
             margin-top: 100px;
         }
 
@@ -63,39 +63,12 @@
             color: white;
         }
 
-
-        .glyphicon {
-            width: 32px;
-            height: 32px;
-        }
-
-        .link-icon {
-            color: white;
-        }
-
-        .bg-2 {
-            color: #336699;
-        }
-
-        .bg-3 {
-            background-color: #339966;
-            color: white;
-            border-radius: 25px;
-
-        }
         .bg-4 {
             background-color: darkslategray;
             color: white;
         }
 
-        .umargin {
-            padding: 10px;
-        }
 
-        .proImg {
-            width: 400px;
-            height: 250px;
-        }
 
         .topBtn {
             font-family: 'Recipekorea';
@@ -122,18 +95,10 @@
             text-decoration: none;
         }
 
-        .table {
-            border-bottom: 0px !important;
+        .custom-text {
+            margin-top:
         }
 
-        .table th,
-        .table td {
-            border: 1px !important;
-        }
-
-        .fixed-table-container {
-            border: 0px !important;
-        }
     </style>
 </head>
 
@@ -141,23 +106,49 @@
     <nav class="navbar navbar-fixed-top" style="font-weight: bold;">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                <a class="navbar-brand" href="#">ABOUT ME</a>
+                <button type="button" class="navbar-toggle backBtn" style="color: #336699;">
+                    BACK
                 </button>
-                <a class="navbar-brand" href="#">황태은 포트폴리오</a>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
+            <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#portpolioId">프로젝트</a></li>
-                    <li><a href="#skillId">스킬</a></li>
-                    <li><a href="#introduceId">소개</a></li>
+                    <li><a href="index.html">BACK</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <div class="container-fluid">
+        <div class="media">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-3 text-center">
+                    <img src="images/profile.jpg" class="img-circle" style="width: 350px; height: 400px;">
+                </div>
+                <div class="col-md-3 mt-5 text-center custom-text">
+                    <h1 style="font-family: 'Nanum Myeongjo', serif ;">
+                        '나의 부끄러운 행동은 다른 사람에겐 잊혀지더라도 나의 기억엔 평생간다.'
+                    </h1>
+                    <h3>안녕하세요. 황태은입니다.</h3>
+                    <h3>
+                        언제든지 나를 돌아봤을 때 자랑스러울 수 있도록 행동하겠습니다.
+                    </h3>
+                    <p>010.3038.8518</p>
+                    <p>hwangtaeeun@outlook.com</p>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.backBtn').click(function() {
+                location.href = 'index.html';
+            });
+        });
+    </script>
 </body>
 
 </html>
